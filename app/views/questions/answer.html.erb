@@ -6,4 +6,8 @@
   <p>Hello there</p>
 <% end %>
 
+<% if params[:question] != "hello" || params[:question] != "what time is it?" %>
+ <p>I don't care, get dressed and go to work!</p>
+<% end %>
+
 <%= link_to 'Ask another question', 'ask' %>
