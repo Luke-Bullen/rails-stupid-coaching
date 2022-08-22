@@ -1,0 +1,9 @@
+<%if params[:question] == "what time is it?"%>
+  <p>Now is <%= Time.now %></p>
+<% end %>
+
+<%if params[:question] == "hello"%>
+  <p>Hello there</p>
+<% end %>
+
+<%= link_to 'Ask another question', 'ask' %>
